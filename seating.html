@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Seating</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .seating-box {
+            padding: 50px 50px;
+            width: 350px;
+            height: 350px;
+            background: rgba(0, 0, 55, 0.45);
+            color: #fff;
+        }
+
+        .seating-box button {
+            width: 20%;
+            height: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Seating Arrangement</h1>
+    <div class="seating-box" ng-controller="seatCtrl">
+        <!-- <button class="btn btn-default">s1</button> -->
+        <table>
+            <tr ng-repeat='t in tables'>
+                <td>
+                    <button class="btn btn-default">{{t.no_of_people}}</button>
+                    <br ><br >
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
