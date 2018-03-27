@@ -1,10 +1,6 @@
 angular.module('mainApp')
-  .controller("seatCtrl", function ($scope) {
+  .controller("seatCtrl", function ($scope, $location) {
 
-    $scope.seat1 = 'Seat 1';
-    $scope.seat2 = 'Seat 2';
-    $scope.seat3 = 'Seat 3';
-    $scope.seat4 = 'Seat 4';
     $scope.tables = [];
   
     class table {
@@ -19,12 +15,12 @@ angular.module('mainApp')
       
       if (!isNaN(no_of_people) && no_of_people > 0) {
         alert(table_no);
+        $location.path('/orders');
       } else {
-        alert('error');
+        alert('Error!!!');
       }
       $scope.tables.push(new table(Number(table_no) ,no_of_people));
       
-      document.write($scope.tables[0].no_of_people);
 
     }
 
