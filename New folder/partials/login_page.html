@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <title>Order App</title>
+    <style>
+        body {
+            padding: 50px 50px;
+
+        }
+
+        .login-box {
+            width: 350px;
+            height: 350px;
+            background: rgba(0, 0, 55, 0.45);
+            color: #fff;
+            position: absolute;
+            box-sizing: border-box;
+            padding: 50px 50px;
+
+        }
+
+        .login-box input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .login-box button {
+            width: 100%;
+        }
+
+        .login-box input {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body >
+
+    <div class="login-box">
+        <p>
+            <h2>Login</h2>
+        </p>
+        <div class="form-group">
+            <label> Username </label>
+            <input ng-model="usrname" placeholder="Enter Username" />
+
+            <label>Password</label>
+            <input ng-model='pwd' type="password" placeholder="Enter Password" />
+        </div>
+  
+        <button class="btn btn-success" ng-click="validate()">
+                Submit
+            </button>
+    </div>
+    </div>
+</body>
+
+</html>

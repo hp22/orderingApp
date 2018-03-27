@@ -1,4 +1,4 @@
-var app = angular.module("mainApp", ['ngRoute', ])
+angular.module("mainApp", ['ngRoute'])
 
   .config(['$routeProvider',
         function ($routeProvider) {
@@ -12,20 +12,20 @@ var app = angular.module("mainApp", ['ngRoute', ])
         .when('/orders', {
           templateUrl: 'partials/orders.html'
         })
-        .when('/Page1', {
-          templateUrl: 'partials/orders_partials/Page1.html'
-        })
-        .when('/Page2', {
-          templateUrl: 'partials/orders_partials/Page2.html'
-        })
-        .when('/Page3', {
-          templateUrl: 'partials/orders_partials/Page3.html'
-        })
+      //        .when('/Page1', {
+      //          templateUrl: 'partials/orders_partials/Page1.html'
+      //        })
+      //        .when('/Page2', {
+      //          templateUrl: 'partials/orders_partials/Page2.html'
+      //        })
+      //        .when('/Page3', {
+      //          templateUrl: 'partials/orders_partials/Page3.html'
+      //        })
 
 
-        .otherwise({
-          redirectTo: '/'
-
-        });
-
+      //        .otherwise({
+      //          redirectTo: '/'
+      //
+      //        })
+      ;
         }]);

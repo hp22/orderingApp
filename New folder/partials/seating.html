@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Seating</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .seating-box {
+            padding: 50px 50px;
+            width: 350px;
+            height: 250px;
+            background: rgba(0, 0, 55, 0.45);
+            color: #fff;
+        }
+
+        .seating-box button {
+            width: 20%;
+            height: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Seating Arrangement</h1>
+    <div class="seating-box" ng-controller="seatCtrl">
+        <!-- <button class="btn btn-default">s1</button> -->
+      <button style="position: absolute; top: 150px; left: 100px; height: 50px; width: 100px;" class="btn btn-primary" ng-click="addPeople(1)">Seat 1</button>
+      
+      <button style="position: absolute; top: 150px; left: 250px; height: 50px; width: 100px;" class="btn btn-primary" " ng-click="addPeople(2)">Seat 2</button>
+       
+       <button style="position: absolute; top: 250px; left: 100px; height: 50px; width: 100px;" class="btn btn-primary"  ng-click="addPeople(3)">Seat 3</button>
+      
+      <button style="position: absolute; top: 250px; left: 250px; height: 50px; width: 100px;" class="btn btn-primary"  ng-click="addPeople(4)">Seat 4</button>
+
+    </div>
+  
+
+</body>
+
+</html>

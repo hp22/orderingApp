@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <title>Order App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+  
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+  <script src="controllers/controller.js"></script>
+  <script src="controllers/loginCtrl.js"></script>
+  <script src="controllers/seatCtrl.js"></script>
+  
+  
+</head>
+
+<body ng-app="mainApp">
+  <a ui-sref='.login_page' class='btn btn-primary'> LogIn</a>
+  
+  <div ui-view></div>
+
+</body>
+
+</html>
