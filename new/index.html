@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Order App</title>
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+</head>
+
+<body>
+  <div>
+    <a ui-sref="home">Home</a><br>
+    <a ui-sref="login">Login</a>
+  </div>
+  <div class="container">
+    <div ui-view></div>
+  </div>
+  
+  <script src="controller.js"></script>
+
+</body>
+
+</html>
