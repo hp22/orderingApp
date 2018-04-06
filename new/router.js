@@ -35,6 +35,7 @@ angular.module("mainApp", ['ui.router'])
     })
 
     .controller("seatCtrl", function($scope) {
+        var no_of_people = Number(prompt('Please enter the no of people:'));
 
         // $scope.addPeople = function(no){
         //     alert(no);

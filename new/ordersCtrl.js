@@ -1,4 +1,4 @@
-angular.module("mainApp")
+angular.module("", ["ngRoute"])
 
   .config('$routeProvider', function ($routeProvider) {
     $routeProvider
@@ -16,5 +16,4 @@ angular.module("mainApp")
         redirectTo: '/'
       })
   ;
-
   });

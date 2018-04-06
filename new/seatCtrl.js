@@ -1,5 +1,5 @@
 angular.module('mainApp')
-  .controller("seatCtrl", function ($scope) {
+  .controller("seatCtrl", function ($scope, $location) {
 
     $scope.tables = [];
 
