@@ -1,7 +1,7 @@
 angular.module("mainApp", ['ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/seating');
+    $urlRouterProvider.otherwise('/login');
     //required for default nexted ui-view with ui-sref
     $urlRouterProvider.when('/orders','/orders/page1');
 
