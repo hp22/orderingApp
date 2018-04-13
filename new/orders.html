@@ -1,26 +1,57 @@
 <!DOCTYPE html>
+<style>
+    .cost-box {
+        width: 350px;
+        height: 550px;
+        background: rgb(217, 217, 217);
+        color: rgb(45, 67, 231);
+        position: absolute;
+        box-sizing: border-box;
+        padding: 5px 20px;
+
+    }
+    .disp-box {
+        width: 750px;
+        height: 480px;
+        background: rgb(217, 217, 217);
+        color: rgb(45, 67, 231);
+        position: absolute;
+        box-sizing: border-box;
+        padding: 10px 10px;
+
+    }
+
+</style>
 
 <div ng-controller="ordersCtrl">
-  <h1>orders</h1>
+    <h1>orders</h1>
 
-  <nav class='navbar navbar-default'>
-    <div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <nav class='navbar navbar-default'>
+                    <div class="container-fluid">
 
-      <ul class="nav navbar-nav">
-        <li><a ui-sref='.page1'>Page1</a></li>
-        <li><a ui-sref='.page2'>Page2</a></li>
-        <li><a ui-sref='.page3'>Page3</a></li>
-      </ul>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a ui-sref='/'>Done</a></li>
-      </ul> -->
+                        <ul class="nav navbar-nav">
+                            <li><a ui-sref='.page1'>Page1</a></li>
+                            <li><a ui-sref='.page2'>Page2</a></li>
+                            <li><a ui-sref='.page3'>Page3</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div ui-view class="disp-box">
+                </div>
+
+
+
+            </div>
+            <div class="col-sm-4">
+                <div class="cost-box">
+                    <h3>costs</h3>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-  </nav>
-
-  <!-- <p>
-      {{msg}}
-  </p> -->
-
-  <div ui-view><div>
-
 </div>

@@ -14,11 +14,14 @@
 
 <body ng-app="mainApp">
 
-    <nav class="navbar navbar-inverse" role="navigation">
-        <ul class="nav navbar-nav">
-            <li><a ui-sref="home()">Home</a></li>
-            <li><a ui-sref="login()">Login</a></li>
-        </ul>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="home()">Home</a></li>
+                <li><a ui-sref="login()">Login</a></li>
+            </ul>
+        </div>
+
     </nav>
 
     <div class="container">
@@ -28,7 +31,6 @@
     <script src="loginCtrl.js"></script>
     <script src="seatCtrl.js"></script>
     <script src="ordersCtrl.js"></script>
-
 
 </body>
 
