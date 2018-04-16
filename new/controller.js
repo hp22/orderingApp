@@ -1,7 +1,7 @@
 angular.module("mainApp", ['ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/orders/page1');
     //required for default nexted ui-view with ui-sref
     $urlRouterProvider.when('/orders','/orders/page1');
 
@@ -17,7 +17,6 @@ angular.module("mainApp", ['ui.router'])
                 // template: ...;
                 templateUrl: 'login_page.html',
                 controller: 'loginCtrl',
-                // template: '<h1>{{txt}}</h1>'
             })
 
             .state('seating', {
@@ -35,6 +34,7 @@ angular.module("mainApp", ['ui.router'])
             .state('orders.page1', {
                 url: '/page1',
                 templateUrl: 'Page1.html',
+                controller:'page1Ctrl'
             })
             .state('orders.page2', {
                 url: '/page2',
