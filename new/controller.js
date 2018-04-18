@@ -16,7 +16,6 @@ angular.module("mainApp", ['ui.router'])
                 // template: ...;
                 templateUrl: 'login_page.html',
                 controller: 'loginCtrl',
-                // template: '<h1>{{txt}}</h1>'
             })
 
             .state('seating', {
@@ -34,7 +33,11 @@ angular.module("mainApp", ['ui.router'])
             .state('orders.page1', {
                 url: '/page1',
                 templateUrl: 'Page1.html',
+<<<<<<< HEAD
                 controller: 'page1Ctrl'
+=======
+                controller:'page1Ctrl'
+>>>>>>> 36d25b3ee8fb36056135255b7ca6506ab6d93f29
             })
             .state('orders.page2', {
                 url: '/page2',
