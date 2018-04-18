@@ -1,0 +1,15 @@
+[
+    {
+		"filename": "data/pictures/a.png",
+		"index": "0",
+        "price":"100",
+        "name":"uhuh"
+	},
+    {
+		"filename": "data/pictures/b.png",
+		"index": "1",
+        "price":"200",
+        "name":"aa"
+	}
+
+]

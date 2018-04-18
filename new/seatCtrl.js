@@ -1,5 +1,5 @@
 angular.module('mainApp')
-    .controller("seatCtrl", function($scope, $state) {
+    .controller("seatCtrl", function($scope, $state, $window) {
 
         $scope.tables = [];
         // $scope.text = "hello";
@@ -12,7 +12,6 @@ angular.module('mainApp')
         }
         $scope.addPeople = function(table_no) {
             var no_of_people = Number(prompt('Please enter the no of people:'));
-
             // $scope.text = "hi";
             if (!isNaN(no_of_people) && no_of_people > 0) {
                 // alert(table_no);

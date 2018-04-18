@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <style>
 
-    </style>
-</head>
+<body ng-controller="page1Ctrl">
+    <div>
+        <p>{{msg}}</p>
+        <!-- <img src={{pictures[0]["filename"]}} style="position:relative;left:50px;width:100px; height:100px;" /> -->
+        <!-- <button> one</button> -->
+        <span ng-repeat="pic in pictures">
+            <!-- <span > -->
+                <label style="{{getlabelStyle(pic.index)}}"">{{pic.name}} </label>
+                <img class="button" ng-src={{pic.filename}} style="{{getStyle(pic.index)}}" ng-click="addItem(pic.price)"/>
+            <!-- </span> -->
 
-<body>
-    <button > one</button>
 
+        </span>
+        <!-- <p>{{pictures[0]}}</p> -->
+    </div>
 </body>
 </head>
