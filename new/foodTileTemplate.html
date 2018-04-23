@@ -1,0 +1,19 @@
+
+<head>
+    <style>
+        .food-tile{
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 3px;
+            box-shadow: 0 0 4px gray;
+            margin: 5px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<div class="food-tile">
+    <img width="120" height="100" ng-src= {{food.filename}}  />
+    <h3>{{food.name}}</h3>
+    <p>{{food.price | currency:"£"}}</p>
+</div>

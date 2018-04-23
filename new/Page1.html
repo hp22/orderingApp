@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html lang="">
+<html>
 
-
+<head>
+    <style>
+        .tile{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1em;
+        }
+    </style>
+</head>
 <body ng-controller="page1Ctrl">
-    <div>
-        <p>{{msg}}</p>
-        <!-- <img src={{pictures[0]["filename"]}} style="position:relative;left:50px;width:100px; height:100px;" /> -->
-        <!-- <button> one</button> -->
-        <span ng-repeat="pic in pictures">
-            <!-- <span > -->
-                <label style="{{getlabelStyle(pic.index)}}"">{{pic.name}} </label>
-                <img class="button" ng-src={{pic.filename}} style="{{getStyle(pic.index)}}" ng-click="addItem(pic.price)"/>
-            <!-- </span> -->
+    <h4>{{msg |uppercase}}</h4>
+    <div class="tile">
+        <div ng-repeat="food in foods" ng-click="addToOrder(food)">
+            <food-tile food='food'> </food-tile>
+        </div>
 
-
-        </span>
-        <!-- <p>{{pictures[0]}}</p> -->
     </div>
+
 </body>
+
+</html>
