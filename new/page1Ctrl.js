@@ -1,6 +1,7 @@
 angular.module('mainApp')
-    .controller('page1Ctrl', function($scope, $http) {
+    .controller('page1Ctrl', function($scope, $http, page1Factory) {
         $scope.msg = "_";
+        // $scope.foods = page1Factory.getData();
 
         //def addToOrder function
         $scope.addToOrder = function(food){

@@ -12,13 +12,12 @@
     }
     .disp-box {
         width: 750px;
-        height: 480px;
+        height: 880px;
         background: rgb(217, 217, 217);
         color: rgb(45, 67, 231);
         position: absolute;
         box-sizing: border-box;
         padding: 10px 10px;
-
     }
 
 </style>
@@ -46,8 +45,8 @@
 
             </div>
             <div class="col-sm-4">
-                <div class="cost-box">
-                    <h3>costs</h3>
+                <div class="cost-box" ng-controller="costCntrl">
+                    <h3 align='right'>Total : {{total |currency:'£'}}</h3>
                 </div>
 
             </div>
