@@ -1,10 +1,13 @@
 angular.module('mainApp')
-    .controller('page1Ctrl', function($scope, itemsFactory) {
+    .controller('page2Ctrl', function($scope, itemsFactory) {
 
-        $scope.msg2 = "_";
-        itemsFactory.getPage1Items().then(function(response) {
-            $scope.foods = response.data;
+        $scope.msg = "_";
+
+        itemsFactory.getPage2Items().then(function(response) {
+            $scope.foods2 = response.data;
         });
+        // $scope.foods = itemsFactory.getPage2Items();
+
 
 
         //def addToOrder function

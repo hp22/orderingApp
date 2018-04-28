@@ -9,10 +9,11 @@
         }
     </style>
 </head>
-<body ng-controller="page1Ctrl">
-    <h4>{{msg |uppercase}}</h4>
+
+<body ng-controller="ordersCtrl">
+    <h4>{{msg1 |uppercase}}</h4>
     <div class="tile">
-        <div ng-repeat="food in foods" ng-click="addToOrder(food)">
+        <div ng-repeat="food in foods" ng-click="addToOrder1(food)">
             <food-tile food='food'> </food-tile>
         </div>
 

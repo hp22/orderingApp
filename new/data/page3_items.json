@@ -1,0 +1,43 @@
+[
+    {
+		"filename": "data/pictures/a.png",
+		"index": "0",
+        "price":"4.50",
+        "name":"full english"
+	},
+    {
+		"filename": "data/pictures/b.png",
+		"index": "1",
+        "price":"5",
+        "name":"pasta"
+	}
+    ,
+    {
+		"filename": "data/pictures/c.png",
+		"index": "2",
+        "price":"4.50",
+        "name":"burger"
+	}
+    ,
+    {
+		"filename": "data/pictures/d.png",
+		"index": "3",
+        "price":"2.50",
+        "name":"tacos"
+	}
+    ,
+    {
+		"filename": "data/pictures/e.png",
+		"index": "4",
+        "price":"5.50",
+        "name":"sheikh kabab"
+	}
+    ,
+    {
+		"filename": "data/pictures/f.png",
+		"index": "5",
+        "price":"7",
+        "name":"steak"
+	}
+
+]
