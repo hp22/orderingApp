@@ -12,7 +12,8 @@ angular.module('orderApp')
           // $scope.msg1 = "he";
           // console.log("hello");
           $scope.msg1 = item.name;
-          // itemsFactory.total += 1;
+          // itemsFactory.setTotal(parseFloat(item.price));
+          itemsFactory.setItemObject(item);
 
       }
 

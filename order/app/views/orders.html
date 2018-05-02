@@ -1,28 +1,4 @@
 <!DOCTYPE html>
-<style>
-    .cost-box {
-        width: 350px;
-        height: 550px;
-        background: rgb(217, 217, 217);
-        color: rgb(45, 67, 231);
-        position: absolute;
-        box-sizing: border-box;
-        padding: 5px 20px;
-
-    }
-    .disp-box {
-        width: 750px;
-        height: 880px;
-        background: rgb(217, 217, 217);
-        color: rgb(45, 67, 231);
-        position: absolute;
-        box-sizing: border-box;
-        padding: 10px 10px;
-    }
-
-</style>
-
-<!-- <divng-controller="ordersCtrl" > -->
 <div >
     <h1>orders</h1>
 
@@ -46,6 +22,10 @@
             <div class="col-sm-4">
                 <div class="cost-box" ng-controller="CostCtrl">
                     <h3 align='right'>Total : {{total |currency:'£'}}</h3>
+                    <br />
+                    <ul class="list-group" ng-repeat = "i in orderList track by $index">
+                        <li class="list-group-item">{{i}}</li>
+                    </ul>
                 </div>
 
             </div>
