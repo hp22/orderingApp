@@ -37,12 +37,12 @@ angular.module("orderApp", [
     .state('orders.page2', {
         url: '/page2',
         templateUrl: 'views/page2.html',
-        // controller: 'Page2Ctrl'
+        controller: 'OrdersCtrl'
     })
     .state('orders.page3', {
         url: '/page3',
         templateUrl: 'views/page3.html',
-        // controller: 'Page3Ctrl'
+        controller: 'OrdersCtrl'
     });
 
     ;

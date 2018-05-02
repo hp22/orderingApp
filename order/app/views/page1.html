@@ -1,8 +1,8 @@
 <div ng-controller="OrdersCtrl">
-  <h2 align="center">{{msg1 |uppercase}} </h2>
+  <h2 align="center">{{msg |uppercase}} </h2>
     <br />
   <div class="wraper">
-    <div class="tile" ng-repeat="item in items" ng-click="addItemToOrder1(item)">
+    <div class="tile" ng-repeat="item in items1" ng-click="addItemToOrder(item)">
       <food-tile item="item"> </food-tile>
     </div>
 

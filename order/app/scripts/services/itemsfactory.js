@@ -18,6 +18,12 @@ angular.module('orderApp')
     retObj.getItems1 = function() {
       return ($http.get("json-files/page1-items.json"));
     }
+    retObj.getItems2 = function() {
+      return ($http.get("json-files/page2-items.json"));
+    }
+    retObj.getItems3 = function() {
+      return ($http.get("json-files/page3-items.json"));
+    }
 
     retObj.getItemObject = function() {
       return retObj.itemObject;

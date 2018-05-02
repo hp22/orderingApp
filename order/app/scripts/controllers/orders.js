@@ -2,16 +2,22 @@
 
 angular.module('orderApp')
   .controller('OrdersCtrl', function ($scope, itemsFactory) {
-      $scope.msg1 = "_";
+      $scope.msg = "_";
 
       itemsFactory.getItems1().then(function(response){
-          $scope.items = response.data;
+          $scope.items1 = response.data;
       });
 
-      $scope.addItemToOrder1 = function(item){
-          // $scope.msg1 = "he";
-          // console.log("hello");
-          $scope.msg1 = item.name;
+      itemsFactory.getItems2().then(function(response){
+          $scope.items2 = response.data;
+      });
+      
+      itemsFactory.getItems3().then(function(response){
+          $scope.items3 = response.data;
+      });
+
+      $scope.addItemToOrder = function(item){
+          $scope.msg = item.name;
           // itemsFactory.setTotal(parseFloat(item.price));
           itemsFactory.setItemObject(item);
 
