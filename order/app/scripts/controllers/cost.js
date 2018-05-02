@@ -7,17 +7,19 @@ angular.module('orderApp')
 
     $scope.orderList = [];
 
-
-
     //watch for changes
     $scope.$watch(function() {
         return itemsFactory.flag;
       },
       function() {
         $scope.itemObj = itemsFactory.getItemObject();
-        $scope.total = $scope.itemObj.price;
-        $scope.orderList.push($scope.itemObj.name);
+        if($scope.itemObj.price){
+            $scope.total += parseFloat($scope.itemObj.price);
+            $scope.orderList.push($scope.itemObj.name);
+        }
+
         console.log($scope.itemObj.price +" "+$scope.itemObj.name);
+        console.log($scope.total);
       });
 
 

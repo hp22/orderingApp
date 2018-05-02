@@ -4,7 +4,6 @@ angular.module('orderApp')
   .factory('itemsFactory', function($http) {
 
     var retObj = {};
-    retObj.total = 0.0;
     retObj.itemObject = {};
     retObj.flag = false;
 
@@ -32,13 +31,6 @@ angular.module('orderApp')
       retObj.flag = !retObj.flag;
       retObj.itemObject = item;
 
-    }
-    retObj.setTotal = function(n) {
-      retObj.flag = !retObj.flag;
-      retObj.total = n;
-    }
-    retObj.getTotal = function() {
-      return retObj.total;
     }
 
     return retObj;
