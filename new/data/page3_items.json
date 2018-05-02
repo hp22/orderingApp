@@ -1,43 +1,43 @@
 [
     {
-		"filename": "data/pictures/a.png",
+		"filename": "https://cdn.cnn.com/cnnnext/dam/assets/150521165141-02-microbiome-foods-restricted-super-169.jpg",
 		"index": "0",
         "price":"4.50",
-        "name":"full english"
+        "name":"chicken drumsticks"
 	},
     {
-		"filename": "data/pictures/b.png",
+		"filename": "https://static.businessinsider.com/image/51f03f966bb3f73c7700000b/image.jpg",
 		"index": "1",
         "price":"5",
-        "name":"pasta"
-	}
-    ,
-    {
-		"filename": "data/pictures/c.png",
-		"index": "2",
-        "price":"4.50",
         "name":"burger"
 	}
     ,
     {
-		"filename": "data/pictures/d.png",
+		"filename": "https://image.pbs.org/video-assets/pbs/in-defense-of-food/198254/images/mezzanine_848.jpg",
+		"index": "2",
+        "price":"4.50",
+        "name":"chips"
+	}
+    ,
+    {
+		"filename": "http://www.vividh.com.au/images/food-fact1.jpg",
 		"index": "3",
         "price":"2.50",
-        "name":"tacos"
+        "name":"samosa"
 	}
     ,
     {
-		"filename": "data/pictures/e.png",
+		"filename": "https://foodtank.com/wp-content/uploads/2018/02/Food-Tank-Peter-Rabbit-Carrots.jpg",
 		"index": "4",
         "price":"5.50",
-        "name":"sheikh kabab"
+        "name":"carrots"
 	}
     ,
     {
-		"filename": "data/pictures/f.png",
+		"filename": "https://www.foodbasics.ca/userfiles/image/layout/bannerHome-right.jpg",
 		"index": "5",
         "price":"7",
-        "name":"steak"
+        "name":"pepper"
 	}
 
 ]

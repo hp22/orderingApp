@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/item-tile.css" />
+
+    <script type="text/javascript" src="https://unpkg.com/@uirouter/angularjs@1.0.7/release/angular-ui-router.min.js"></script>
+
+  </head>
+  <body ng-app="orderApp">
+      <nav class="navbar navbar-inverse">
+             <div class="container-fluid">
+                 <ul class="nav navbar-nav">
+                     <li><a ui-sref="home()">Home</a></li>
+                     <li><a ui-sref="login()">Login</a></li>
+                 </ul>
+             </div>
+
+         </nav>
+
+         <div class="container">
+             <div ui-view></div>
+         </div>
+
+        <!-- <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script> -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/seat.js"></script>
+        <script src="scripts/controllers/orders.js"></script>
+        <script src="scripts/controllers/cost.js"></script>
+
+
+        <script src="scripts/directives/foodtile.js"></script>
+        <script src="scripts/services/itemsfactory.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

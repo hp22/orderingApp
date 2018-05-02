@@ -38,11 +38,13 @@ angular.module("mainApp", [
             })
             .state('orders.page2', {
                 url: '/page2',
-                templateUrl: 'Page2.html'
+                templateUrl: 'Page2.html',
+                controller: 'page2Ctrl'
             })
             .state('orders.page3', {
                 url: '/page3',
-                templateUrl: 'Page3.html'
+                templateUrl: 'Page3.html',
+                controller: 'page3Ctrl'
             });
 
 
