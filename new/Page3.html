@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Page 3</title>
-	<meta name="Author" content=""/>
+    <style>
+        .tile {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1em;
+        }
+    </style>
 </head>
-<body>
-  <h1>Page 3</h1>
+
+<body ng-controller="ordersCtrl">
+    <h4>{{msg3 |uppercase}}</h4>
+    <div class="tile">
+        <div ng-repeat="food in foods" ng-click="addToOrder3(food)">
+            <food-tile food='food'> </food-tile>
+        </div>
+    </div>
 
 </body>
+
 </html>

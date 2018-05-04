@@ -1,0 +1,43 @@
+[{
+    "name": "coke",
+    "filename": "../images/page3/coke.png",
+    "price": "1.5",
+    "index": "0"
+  },
+  {
+    "name": "cold drinks",
+    "filename": "../images/page3/cold drinks.jpeg",
+    "price": "1.5",
+    "index": "1"
+  },
+  {
+    "name": "irn bru",
+    "filename": "../images/page3/irn bru.png",
+    "price": "1",
+    "index": "2"
+  },
+  {
+    "name": "lassi",
+    "filename": "../images/page3/lassi.jpg",
+    "price": "2.5",
+    "index": "3"
+  },
+  {
+    "name": "mango lassi",
+    "filename": "../images/page3/mango lassi.jpeg",
+    "price": "2.5",
+    "index": "4"
+  },
+  {
+    "name": "sprite",
+    "filename": "../images/page3/sprite.png",
+    "price": "1.5",
+    "index": "5"
+  },
+  {
+    "name": "whiskey",
+    "filename": "../images/page3/whiskey.jpg",
+    "price": "4.5",
+    "index": "6"
+  }
+]

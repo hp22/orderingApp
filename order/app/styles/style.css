@@ -1,0 +1,76 @@
+.login-box {
+  width: 350px;
+  height: 350px;
+  background: rgba(0, 0, 55, 0.45);
+  color: #fff;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 50px 50px;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.login-box button {
+  width: 100%;
+}
+
+.login-box input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+.seating-box {
+  padding: 50px 50px;
+  width: 350px;
+  height: 250px;
+  background: rgba(0, 0, 55, 0.45);
+  color: #fff;
+}
+
+.seating-box button {
+  width: 20%;
+  height: 20%;
+}
+
+.cost-box {
+  width: 350px;
+  height: 950px;
+  background: rgb(217, 217, 217);
+  position: absolute;
+  box-sizing: border-box;
+  /* padding: 5px 20px; */
+}
+
+.disp-box {
+  width: 750px;
+  height: 880px;
+  background: rgb(217, 217, 217);
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px 10px;
+}
+
+.tile {
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px lightgray;
+  margin: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.wraper {
+  display: grid;
+  background: #eee;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

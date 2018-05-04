@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<div >
+    <h1>orders</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8" >
+                <nav class='navbar navbar-default'>
+                    <div class="container-fluid" ng-controller="OrdersCtrl">
+
+                        <ul class="nav navbar-nav">
+                            <li><a ui-sref='.page1'>Page1</a></li>
+                            <li><a ui-sref='.page2'>Page2</a></li>
+                            <li><a ui-sref='.page3'>Page3</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div ui-view class="disp-box">
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="cost-box" ng-controller="CostCtrl">
+                    <h3 align='right'>Total : {{total |currency:'£'}}</h3>
+                    <br />
+                    <ul class="list-group" ng-repeat = "i in orderList track by $index">
+                        <li class="list-group-item">{{i}}</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

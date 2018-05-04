@@ -19,6 +19,7 @@ angular.module("mainApp", [
         controller: 'loginCtrl',
       })
 
+<<<<<<< HEAD
       .state('seating', {
         url: '/seating',
         templateUrl: 'seating.html',
@@ -45,6 +46,35 @@ angular.module("mainApp", [
         url: '/page3',
         templateUrl: 'Page3.html'
       });
+=======
+            .state('seating', {
+                url: '/seating',
+                templateUrl: 'seating.html',
+                controller: 'seatCtrl'
+                // template: '<h1>hello</h1>'
+            })
+            .state('orders', {
+                url: '/orders',
+                templateUrl: 'orders.html',
+                controller: 'ordersCtrl'
+                // template: '<h1>hello</h1>'
+            })
+            .state('orders.page1', {
+                url: '/page1',
+                templateUrl: 'Page1.html',
+                controller: 'page1Ctrl'
+            })
+            .state('orders.page2', {
+                url: '/page2',
+                templateUrl: 'Page2.html',
+                controller: 'page2Ctrl'
+            })
+            .state('orders.page3', {
+                url: '/page3',
+                templateUrl: 'Page3.html',
+                controller: 'page3Ctrl'
+            });
+>>>>>>> 6e5cabc94b8a45339345c3db555a3240d46ea49d
 
 
   });

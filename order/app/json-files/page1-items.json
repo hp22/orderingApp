@@ -1,0 +1,38 @@
+[{
+		"name": "burger",
+		"filename": "../images/page1/burger.jpg",
+		"price": "5.5",
+		"index": "0"
+	},
+	{
+		"name": "chicken roast",
+		"filename": "../images/page1/chicken roast.jpg",
+		"price": "6",
+		"index": "1"
+	},
+	{
+		"name": "hotdog",
+		"filename": "../images/page1/hotdog.jpg",
+		"price": "2.5",
+		"index": "2"
+	},
+	{
+		"name": "mac doodle",
+		"filename": "../images/page1/macdoodle.jpg",
+		"price": "4.5",
+		"index": "3"
+	},
+	{
+		"name": "noodles",
+		"filename": "../images/page1/noodles.jpg",
+		"price": "4.4",
+		"index": "4"
+	},
+
+	{
+		"name": "tacos",
+		"filename": "../images/page1/tacos.jpg",
+		"price": "3.5",
+		"index": "5"
+	}
+]

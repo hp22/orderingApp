@@ -22,14 +22,19 @@
 
 </style>
 
-<div ng-controller="ordersCtrl">
+<!-- <divng-controller="ordersCtrl" > -->
+<div >
     <h1>orders</h1>
 
     <div class="container">
         <div class="row">
+<<<<<<< HEAD
             <div class="col-md-8">
+=======
+            <div class="col-sm-8" >
+>>>>>>> 6e5cabc94b8a45339345c3db555a3240d46ea49d
                 <nav class='navbar navbar-default'>
-                    <div class="container-fluid">
+                    <div class="container-fluid" ng-controller="ordersCtrl">
 
                         <ul class="nav navbar-nav">
                             <li><a ui-sref='.page1'>Page1</a></li>
@@ -41,8 +46,13 @@
                 <div ui-view class="disp-box">
                 </div>
             </div>
+<<<<<<< HEAD
             
             <div class="col-md-4">
+=======
+
+            <div class="col-sm-4">
+>>>>>>> 6e5cabc94b8a45339345c3db555a3240d46ea49d
                 <div class="cost-box" ng-controller="costCtrl">
                     <h3 align='right'>Total : {{total |currency:'£'}}
                     </h3>

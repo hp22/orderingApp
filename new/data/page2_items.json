@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
 		"filename": "data/pictures/b.png",
 		"index": "0",
         "price":"2.50",
@@ -38,6 +39,46 @@
 		"index": "5",
         "price":"7",
         "name":"sheikh kabab"
+=======
+		"filename": "https://www.ndtv.com/cooks/images/quick-noodles-%20with-whatever-620.jpg",
+		"index": "0",
+        "price":"2.50",
+        "name":"salad"
+	},
+    {
+		"filename": "https://drop.ndtv.com/albums/COOKS/currygallery/malaiprawn.jpg",
+		"index": "1",
+        "price":"1.2",
+        "name":"prawn"
+	}
+    ,
+    {
+		"filename": "https://drop.ndtv.com/albums/COOKS/bbq-recipes/skeweredkebabs.jpg",
+		"index": "2",
+        "price":"4.50",
+        "name":"kebab"
+	}
+    ,
+    {
+		"filename": "https://drop.ndtv.com/albums/COOKS/best-time/fruits.6.jpg",
+		"index": "3",
+        "price":"2.50",
+        "name":"fruit salad"
+	}
+    ,
+    {
+		"filename": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS982EnjS3BoBiso2m4DrQIC3MK1yR8h6xQcEuFZa55x2D6irdC",
+		"index": "4",
+        "price":"5.50",
+        "name":"spring roll"
+	}
+    ,
+    {
+		"filename": "https://pbs.twimg.com/profile_images/750559002166263808/dVrxkvEM_400x400.jpg",
+		"index": "5",
+        "price":"7",
+        "name":"fruits"
+>>>>>>> 6e5cabc94b8a45339345c3db555a3240d46ea49d
 	}
 
 ]
