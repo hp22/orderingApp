@@ -10,6 +10,7 @@ angular.module('mainApp')
         //def addToOrder function
         $scope.addToOrder = function(food) {
             $scope.msg = food.name;
+            itemsFactory.addToOrder(food);
         };
 
         // read json file

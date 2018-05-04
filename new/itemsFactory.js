@@ -1,7 +1,8 @@
 angular.module('mainApp')
     .factory('itemsFactory',function($http) {
         var retVal = {};
-        retVal.msg = 'hellllo';
+//        retVal.msg = 'hellllo';
+        var order = {};
 
         // var data = $http.get("data/page1_content.json");
         //get page1 items
@@ -20,6 +21,14 @@ angular.module('mainApp')
         retVal.getPage3Items = function(){
             return $http.get('data/page3_items.json');
             // return data;
+        }
+        
+        retVal.addToOrder = function(food)
+        {
+          return order.push(food);
+        }
+        retVal.getOrder = function(){
+          return order;
         }
 
         // retVal.getData = function(){
