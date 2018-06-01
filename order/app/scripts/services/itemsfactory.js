@@ -22,6 +22,7 @@ angular.module('orderApp')
       return retObj.itemObject;
     }
     retObj.setItemObject = function(item) {
+      //flag to tell cost.js that there has been changes
       retObj.flag = !retObj.flag;
       retObj.itemObject = item;
 

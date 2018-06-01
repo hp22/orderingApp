@@ -36,7 +36,7 @@
   },
   {
     "name": "samosa",
-    "filename": "../images/page2/samosa.jpg",
+    "filename": "./images/page2/samosa.jpg",
     "price": "2.5",
     "index": "6"
   }

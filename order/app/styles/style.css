@@ -43,16 +43,27 @@ h2 {
 
 .cost-box {
   width: 350px;
-  height: 950px;
+  height: 600px;
+/*  overflow: auto;*/
   background: rgb(217, 217, 217);
   position: absolute;
   box-sizing: border-box;
-  /* padding: 5px 20px; */
+  padding: 10px 10px;
+}
+
+.list-box {
+  width: 300px;
+  height: 450px;
+  overflow-y: scroll;
+  background: rgb(200,200,2);
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .disp-box {
   width: 750px;
-  height: 880px;
+  height: 530px;
   background: rgb(217, 217, 217);
   position: absolute;
   box-sizing: border-box;
