@@ -1,0 +1,10 @@
+To start a new project called 'webapp'
+yo angular webapp
+
+
+yo angular: route myroute	creates app/scripts/controllers/myroute.js
+yo angular: controller user	creates app/scripts/controllers/users.js
+yo angular: directive myDirective creates app/scripts/directives/myDirective.js
+yo angular: filter myFilter
+yo angular: view user 		crestes app/views/user.html
+yo angular: service myService
