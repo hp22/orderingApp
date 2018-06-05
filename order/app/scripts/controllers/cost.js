@@ -5,7 +5,8 @@ angular.module('orderApp')
     $scope.total = 0.0;
     $scope.itemObj = itemsFactory.getItemObject();
 
-    $scope.orderList = {"apple":[1,1], "banana":[2,2], "pears":[3,3]};
+    // $scope.orderList = {"apple":[1,1], "banana":[2,2], "pears":[3,3]};
+    $scope.orderList = {};
     $scope.dict = {};
     //    $scope.orderList = {
     //      "1": 11,

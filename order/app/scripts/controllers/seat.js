@@ -3,13 +3,13 @@ angular.module('orderApp')
 
     $scope.tables = [];
 
-    class table {
-      constructor(t_no, no) {
-        this.table_no = t_no;
-        this.no_of_people = no;
-        this.order = [];
-      }
-    }
+    // class table {
+    //   constructor(t_no, no) {
+    //     this.table_no = t_no;
+    //     this.no_of_people = no;
+    //     this.order = [];
+    //   }
+    // }
     $scope.addPeople = function (table_no) {
       var no_of_people = Number(prompt('Please enter the no of people:'));
 
@@ -19,7 +19,7 @@ angular.module('orderApp')
       } else {
         alert('Error!!!');
       }
-      $scope.tables.push(new table(Number(table_no) ,no_of_people));
+      // $scope.tables.push(new table(Number(table_no) ,no_of_people));
 
 
     }
