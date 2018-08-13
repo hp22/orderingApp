@@ -3,23 +3,21 @@
   <h1 align='center'>orders </h1>
 
   <div class="container">
-
-    <nav class='navbar navbar-default'>
-      <div ng-controller="OrdersCtrl">
-
-        <ul class="nav navbar">
-          <li><a ui-sref='.page1'>Page1</a></li>
-          <li><a ui-sref='.page2'>Page2</a></li>
-          <li><a ui-sref='.page3'>Page3</a></li>
-        </ul>
-      </div>
-    </nav>
     <div class="row">
       <div class="col-xs-8">
-<!--        <div class="container">-->
-          <div ui-view class="disp-box">
+        <nav class='navbar navbar-default'>
+          <div ng-controller="OrdersCtrl">
+
+            <ul class="nav navbar">
+              <li><a ui-sref='.page1'>Page1</a></li>
+              <li><a ui-sref='.page2'>Page2</a></li>
+              <li><a ui-sref='.page3'>Page3</a></li>
+            </ul>
           </div>
-<!--        </div>-->
+        </nav>
+
+        <div ui-view class="disp-box">
+        </div>
       </div>
 
       <div class="col-xs-4">

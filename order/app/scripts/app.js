@@ -1,9 +1,10 @@
 angular.module("orderApp", [
     'ui.router'
   ])
-  .config(function($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider) {
     // $urlRouterProvider.otherwise('/orders');
-    $urlRouterProvider.otherwise('/orders');
+    $urlRouterProvider.otherwise('/login');
+
     //required for default nested ui-view with ui-sref
     $urlRouterProvider.when('/orders', '/orders/page1');
 
@@ -19,32 +20,31 @@ angular.module("orderApp", [
         controller: 'LoginCtrl'
       })
 
-    .state('seating', {
+      .state('seating', {
         url: '/seating',
         templateUrl: 'views/seating.html',
         controller: 'SeatCtrl'
-    })
-    .state('orders', {
+      })
+      .state('orders', {
         url: '/orders',
         templateUrl: 'views/orders.html',
         controller: 'OrdersCtrl'
         // template: '<h1>hello</h1>'
-    })
-    .state('orders.page1', {
+      })
+      .state('orders.page1', {
         url: '/page1',
         templateUrl: 'views/page1.html',
         controller: 'OrdersCtrl'
-    })
-    .state('orders.page2', {
+      })
+      .state('orders.page2', {
         url: '/page2',
         templateUrl: 'views/page2.html',
         controller: 'OrdersCtrl'
-    })
-    .state('orders.page3', {
+      })
+      .state('orders.page3', {
         url: '/page3',
         templateUrl: 'views/page3.html',
         controller: 'OrdersCtrl'
-    });
+      });
 
-    ;
   });
