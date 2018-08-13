@@ -5,14 +5,8 @@ angular.module('orderApp')
     $scope.total = 0.0;
     $scope.itemObj = itemsFactory.getItemObject();
 
-    // $scope.orderList = {"apple":[1,1], "banana":[2,2], "pears":[3,3]};
     $scope.orderList = {};
     $scope.dict = {};
-    //    $scope.orderList = {
-    //      "1": 11,
-    //      "2": 22,
-    //      "3": 33
-    //    };
 
     //watch for changes
     $scope.$watch(function() {
@@ -28,13 +22,11 @@ angular.module('orderApp')
             $scope.orderList[$scope.itemObj.name] = [$scope.itemObj.price, 1];
 
           }
-          // console.log($scope.orderList);
 
         }
       });
 
     $scope.editList = function(key) {
-      //      $scope.orderList[key] -= 1;
       var old_no = $scope.orderList[key][1];
 
       var no = parseInt(prompt("Enter the no:", $scope.orderList[key][1]));
@@ -50,6 +42,7 @@ angular.module('orderApp')
         delete $scope.orderList[key];
       }
     };
+  
     $scope.clearOrderList = function() {
       if (confirm("Do you want to clear the order list?")) {
         $scope.orderList = {};
