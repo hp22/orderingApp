@@ -4,11 +4,11 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-xs-8">
+      <div class="col-sm-8">
         <nav class='navbar navbar-default'>
           <div ng-controller="OrdersCtrl">
 
-            <ul class="nav navbar">
+            <ul class="nav navbar-nav">
               <li><a ui-sref='.page1'>Page1</a></li>
               <li><a ui-sref='.page2'>Page2</a></li>
               <li><a ui-sref='.page3'>Page3</a></li>
@@ -16,11 +16,13 @@
           </div>
         </nav>
 
-        <div ui-view class="disp-box">
+        <div class="container">
+          <div ui-view class="disp-box">
+          </div>
         </div>
       </div>
 
-      <div class="col-xs-4">
+      <div class="col-sm-4">
         <div class="cost-box" ng-controller="CostCtrl">
           <div class="container-fluid">
             <button class="btn btn-primary" style="float:left;" ng-click="clearOrderList()">CLEAR ORDER</button>
@@ -29,23 +31,25 @@
           </div>
 
           <div class="list-box">
-
             <!--
-            <ul class="list-group" ng-repeat="(k,v) in orderList" ng-click="editList(k)">
-              <li class="list-group-item active">{{k}}      {{v[1]}}</li>
-            </ul> 
--->
+            <ul class="list-group" ng-repeat="i in orderList track by $index">
+              <li class="list-group-item active">{{i[0]}}</li>
+            </ul> -->
 
-
-            <table style="font-size:12px;" class="table table-bordered table-hover" ng-repeat="(k,v) in orderList" ng-click="editList(k)">
-              <tbody>
-                <tr>
+            <table class="table table-bordered table-hover"  ng-repeat="(k,v) in orderList" ng-click="editList(k)">
+              <tbody >
+                <tr >
                   <td align="left">{{k}}</td>
                   <td align="right">{{v[1]}}</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <!-- <h1>aaaaaaaaaaaaddfsdsdfjsdkfjsdfksdjfsjdfsdjfls</h1>
+
+          <div>
+            <button>ORDER</button>
+          </div> -->
 
         </div>
 
