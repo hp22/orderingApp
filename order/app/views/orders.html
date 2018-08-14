@@ -8,55 +8,50 @@
         <nav class='navbar navbar-default'>
           <div class="container-fluid" ng-controller="OrdersCtrl">
 
-            <ul class="nav navbar-nav">
-              <li><a ui-sref='.page1'>Page1</a></li>
-              <li><a ui-sref='.page2'>Page2</a></li>
-              <li><a ui-sref='.page3'>Page3</a></li>
-            </ul>
-          </div>
+              <ul class="nav nav-pills">
+                
+                <li><a ui-sref='.page1'>Page1</a></li>
+                <li><a ui-sref='.page2'>Page2</a></li>
+                <li><a ui-sref='.page3'>Page3</a></li>
+              </ul>
+            </div>
         </nav>
-
-        <div class="container">
-          <div ui-view class="disp-box">
-          </div>
+        <div ui-view class="disp-box">
         </div>
-      </div>
+        </div>
 
-      <div class="col-xs-4">
-        <div class="cost-box" ng-controller="CostCtrl">
+        <div class="col-xs-4">
           <div class="container-fluid">
-            <button class="btn btn-primary" style="float:left;" ng-click="clearOrderList()">CLEAR ORDER</button>
-            <h4 style="text-align:right;float:right;">Total : {{total |currency:'£'}}</h4>
-            <hr style="clear:both;" />
-          </div>
+            <div class="cost-box" ng-controller="CostCtrl">
+              <button class="btn btn-primary" style="float:left;" ng-click="clearOrderList()">CLEAR ORDER</button>
+              <h4 style="text-align:right;float:right;">Total : {{total |currency:'£'}}</h4>
+              <hr style="clear:both;" />
 
-          <div class="list-box">
-            <!--
+              <div class="list-box">
+                <!--
             <ul class="list-group" ng-repeat="i in orderList track by $index">
               <li class="list-group-item active">{{i[0]}}</li>
             </ul> -->
 
-            <table class="table table-bordered table-sm table-hover" >
-              <thead>
-                <tr>
-                  <th align="left ">Item</th>
-                  <th align="right ">Qty</th>
-                </tr>
-              </thead>
+                <table class="table table-bordered table-sm table-hover">
+                  <thead>
+                    <tr>
+                      <th align="left ">Item</th>
+                      <th align="right ">Qty</th>
+                    </tr>
+                  </thead>
 
-              <tbody ng-repeat="(k,v) in orderList " ng-click="editList(k)">
-              <tr>
-                <td align="left">{{k}}</td>
-                <td align="right">{{v[1]}}</td>
-              </tr>
-              </tbody>
-            </table>
+                  <tbody ng-repeat="(k,v) in orderList " ng-click="editList(k)">
+                    <tr>
+                      <td align="left">{{k}}</td>
+                      <td align="right">{{v[1]}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-
         </div>
-
       </div>
-
     </div>
   </div>
-</div>
