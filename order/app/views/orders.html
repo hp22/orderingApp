@@ -18,12 +18,11 @@
               </ul>
             </div>
           </nav>
-          <div ui-view class="well">
+          <div ui-view>
           </div>
         </div>
         <div class=" col-xs-4">
-
-          <div class=" container-fluid">
+          <div class="container-fluid">
             <div ng-controller="CostCtrl">
               <button class="btn btn-primary" style="float:left;" ng-click="clearOrderList()">CLEAR ORDER</button>
               <h4 style="text-align:right;float:right;">Total : {{total |currency:'£'}}</h4>
