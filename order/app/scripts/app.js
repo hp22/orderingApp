@@ -3,7 +3,7 @@ angular.module("orderApp", [
   ])
   .config(function($stateProvider, $urlRouterProvider) {
     // $urlRouterProvider.otherwise('/orders');
-    $urlRouterProvider.otherwise('/orders');
+    $urlRouterProvider.otherwise('/login');
     //required for default nested ui-view with ui-sref
     $urlRouterProvider.when('/orders', '/orders/page1');
 

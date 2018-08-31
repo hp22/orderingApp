@@ -6,6 +6,7 @@ angular.module('orderApp')
     var retObj = {};
     retObj.itemObject = {};
     retObj.flag = false;
+    retObj.user = "_";
 
     // Public API here
     retObj.getItems1 = function() {
