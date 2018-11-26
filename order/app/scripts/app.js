@@ -10,7 +10,7 @@ angular.module("orderApp", [
     $stateProvider
       .state('home', {
         url: '/home',
-        template: '<h1>Home Page</h1>'
+        templateUrl: 'views/home.html'
       })
 
       .state('login', {
