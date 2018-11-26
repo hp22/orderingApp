@@ -3,14 +3,14 @@ angular.module("orderApp", [
   ])
   .config(function($stateProvider, $urlRouterProvider) {
     // $urlRouterProvider.otherwise('/orders');
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/home');
     //required for default nested ui-view with ui-sref
     $urlRouterProvider.when('/orders', '/orders/page1');
 
     $stateProvider
       .state('home', {
         url: '/home',
-        template: '<h1>Home Page</h1>'
+        templateUrl: 'views/home.html'
       })
 
       .state('login', {
