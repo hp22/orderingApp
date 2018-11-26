@@ -31,7 +31,8 @@ background-size: cover;
   color: #fff;
   position: absolute;
   box-sizing: border-box;
-  padding: 50px 50px;
+  padding: 30px 30px;
+  margin-top: 50px;
 }
 
 .login-box input {
@@ -59,6 +60,7 @@ h2 {
   width: 350px;
   height: 250px;
   position: absolute;
+  margin-top: 20px;
   background: rgba(0, 0, 55, 0.45);
   color: #fff;
 }

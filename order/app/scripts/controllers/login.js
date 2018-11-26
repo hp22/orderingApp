@@ -10,7 +10,7 @@ angular.module('orderApp')
 
       } else {
           alert("invalid username or pwd");
-        // $location.path('/seating');
+         $location.path('/seating');
 
       }
     }
