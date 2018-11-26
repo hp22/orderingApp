@@ -2,7 +2,6 @@ angular.module('orderApp')
 
   .controller('LoginCtrl', function ($scope, $location) {
     $scope.user = "_";
-    $scope.var = 1;
     $scope.validate = function () {
       $scope.var += 1;
 
@@ -12,7 +11,7 @@ angular.module('orderApp')
         $location.path('/seating');
 
       } else {
-        $scope.user = "new";
+//        $scope.user = "new";
 
 
         
